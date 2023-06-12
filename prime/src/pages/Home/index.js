@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import api from '../../sevices/Api';
-import {Link} from 'react-router-dom'
-import './home.css'
+import {Link} from 'react-router-dom';
+import './home.css';
 
 
 //https://api.themoviedb.org/3//movie/now_playing?api_key=96076cdec05805e988903bffa64c5e6c&language=pt-BR
@@ -9,6 +9,7 @@ import './home.css'
 function Home(){
 
     const [filmes, setfilmes ]= useState ([]);
+    const [loading, setloading] = useState(true);
 
 
 useEffect(()=>{
@@ -22,13 +23,21 @@ useEffect(()=>{
 
         })
        // console.log(response.data.results);
-       setfilmes(response.data.results.slice(0, 21))
+       setfilmes(response.data.results.slice(0, 19))
+       setloading(false);
 
     }
     loadFilmes();
 
 
 },[])
+if(loading){
+    return(
+        <div className="loading">
+            <h2>Carregando Filmes.....</h2>
+        </div>
+    )
+}
 
     return(
         <div className="container">
@@ -38,7 +47,7 @@ useEffect(()=>{
                         <article key={filme.id}>
                             <strong>{filme.title}</strong>
                             <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title}/>
-                            <Link to={`/filme/${filme.id}`}> Acessar</Link>
+                            <Link to={`/Filme/${filme.id}`}> Acessar</Link>
                         </article>
                     )
                 })}
