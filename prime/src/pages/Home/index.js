@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import{ useParams, useNavigate} from 'react-router-dom'
 import api from '../../sevices/Api';
 import {Link} from 'react-router-dom';
 import './home.css';
