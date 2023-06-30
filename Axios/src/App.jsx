@@ -10,9 +10,13 @@ const [dados, setdados] = useState([])
 const getdados = async() =>{
 
   try{
-    const response = await axios.get("http://10.0.1.43")
+    const response = await axios.get("http://10.0.1.43");
 
-    console.log(response)
+    const data = response.data;
+
+   setdados(data)
+
+   //console.log(data)
 
   }
   catch(erro){
@@ -26,7 +30,7 @@ useEffect(() => {
   getdados()
 
 }, [])
-return 
+
 
 }
 
