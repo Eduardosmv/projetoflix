@@ -1,0 +1,61 @@
+import {api} from "../Api/config"
+import  { useState } from 'react';
+
+import './App.css'
+
+function App(){      
+const [dados, setdados] = useState([]);
+
+
+ const response =  api.get()   
+ setdados (response)  
+
+ console.log(dados[0])
+ return <div className="App">Funcionando </div>
+
+
+
+
+--------------------------------------------------------
+import  { Component }from 'react';
+import {api} from "../Api/config"
+
+class App extends Component{
+
+  state= {
+    pulso: [],
+  }
+
+  async componentDidMount(){
+    const response = await api.get('');
+    console.log(response.data);
+
+    this.setState({ pulso: response.data});
+  }
+
+  render(){
+    return(
+
+      <div>
+        <h1>pegando os dados</h1>
+      </div>
+    );
+  }
+
+}
+
+------------------------------------------------
+codigo funcionando
+import {api} from "../Api/config"
+import  { useState } from 'react';
+
+import './App.css'
+
+function App(){      
+const [dados, setdados] = useState([]);
+const response = api.get('')
+
+setdados (response)
+
+console.log(dados)
+}
