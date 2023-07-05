@@ -1,0 +1,17 @@
+2023-02-28 07:08:06.214 -03 [4392] LOG:  starting PostgreSQL 14.6, compiled by Visual C++ build 1914, 64-bit
+2023-02-28 07:08:06.221 -03 [4392] LOG:  listening on IPv6 address "::", port 5432
+2023-02-28 07:08:06.221 -03 [4392] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-02-28 07:08:06.747 -03 [4896] LOG:  database system was interrupted; last known up at 2023-02-27 07:23:34 -03
+2023-02-28 07:08:14.027 -03 [4896] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-02-28 07:08:14.041 -03 [4896] LOG:  redo starts at 0/1930020
+2023-02-28 07:08:14.041 -03 [4896] LOG:  invalid record length at 0/1930058: wanted 24, got 0
+2023-02-28 07:08:14.041 -03 [4896] LOG:  redo done at 0/1930020 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-02-28 07:08:14.121 -03 [4392] LOG:  database system is ready to accept connections
+2023-02-28 10:31:57.088 -03 [11576] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-28 10:31:57.088 -03 [8] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-28 10:42:06.740 -03 [4392] LOG:  received fast shutdown request
+2023-02-28 10:42:06.749 -03 [4392] LOG:  aborting any active transactions
+2023-02-28 10:42:06.761 -03 [6708] ERROR:  canceling statement due to user request
+2023-02-28 10:42:06.767 -03 [4392] LOG:  background worker "logical replication launcher" (PID 6708) exited with exit code 1
+2023-02-28 10:42:06.767 -03 [6640] LOG:  shutting down
+2023-02-28 10:42:06.815 -03 [4392] LOG:  database system is shut down

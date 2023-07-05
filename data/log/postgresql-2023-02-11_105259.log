@@ -1,0 +1,59 @@
+2023-02-11 10:52:59.438 -03 [4196] LOG:  starting PostgreSQL 14.6, compiled by Visual C++ build 1914, 64-bit
+2023-02-11 10:52:59.439 -03 [4196] LOG:  listening on IPv6 address "::", port 5432
+2023-02-11 10:52:59.439 -03 [4196] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-02-11 10:52:59.937 -03 [4968] LOG:  database system was interrupted; last known up at 2023-02-13 09:02:01 -03
+2023-02-11 10:53:02.267 -03 [4968] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-02-11 10:53:02.276 -03 [4968] LOG:  redo starts at 0/1899148
+2023-02-11 10:53:02.276 -03 [4968] LOG:  invalid record length at 0/1899230: wanted 24, got 0
+2023-02-11 10:53:02.276 -03 [4968] LOG:  redo done at 0/18991F8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-02-11 10:53:02.322 -03 [4196] LOG:  database system is ready to accept connections
+2023-02-14 07:56:45.063 -03 [6932] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-14 07:56:45.063 -03 [3252] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-14 07:56:45.063 -03 [2064] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-14 07:56:45.064 -03 [12132] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-14 14:04:56.247 -03 [7480] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-14 14:04:56.247 -03 [7480] FATAL:  password authentication failed for user "Edmar"
+2023-02-14 14:04:56.247 -03 [7480] DETAIL:  Role "Edmar" does not exist.
+	Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2023-02-14 14:04:56.247 -03 [7480] LOG:  could not send data to client: unrecognized winsock error 10054
+2023-02-14 14:12:11.903 -03 [3732] ERROR:  column "name" does not exist at character 32
+2023-02-14 14:12:11.903 -03 [3732] HINT:  Perhaps you meant to reference the column "fazenda.nome".
+2023-02-14 14:12:11.903 -03 [3732] STATEMENT:  SELECT * FROM fazenda ORDER BY name ASC
+2023-02-14 14:14:11.795 -03 [5016] ERROR:  column "name" does not exist at character 32
+2023-02-14 14:14:11.795 -03 [5016] HINT:  Perhaps you meant to reference the column "fazenda.nome".
+2023-02-14 14:14:11.795 -03 [5016] STATEMENT:  SELECT * FROM fazenda ORDER BY name ASC
+2023-02-14 14:34:28.950 -03 [6812] ERROR:  invalid input syntax for type integer: "fazenda"
+2023-02-14 14:34:28.950 -03 [6812] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-02-14 14:34:28.950 -03 [6812] STATEMENT:  UPDATE fazenda SET nome = $1 WHERE codfaz = $1
+2023-02-14 14:37:54.920 -03 [1532] ERROR:  syntax error at or near "WHERE" at character 31
+2023-02-14 14:37:54.920 -03 [1532] STATEMENT:  UPDATE fazenda SET nome = $1, WHERE codfaz = $2
+2023-02-14 14:41:53.517 -03 [4188] ERROR:  syntax error at or near "WHERE" at character 31
+2023-02-14 14:41:53.517 -03 [4188] STATEMENT:  UPDATE fazenda SET nome = $1, WHERE codfaz = $2
+2023-02-14 14:42:31.914 -03 [9324] ERROR:  syntax error at or near "WHERE" at character 31
+2023-02-14 14:42:31.914 -03 [9324] STATEMENT:  UPDATE fazenda SET nome = $1, WHERE codfaz = $2
+2023-02-14 14:45:10.207 -03 [6704] ERROR:  syntax error at or near "WHERE" at character 31
+2023-02-14 14:45:10.207 -03 [6704] STATEMENT:  UPDATE fazenda SET nome = $1, WHERE codfaz = $2
+2023-02-14 14:46:13.677 -03 [3000] ERROR:  syntax error at or near "WHERE" at character 31
+2023-02-14 14:46:13.677 -03 [3000] STATEMENT:  UPDATE fazenda SET nome = $1, WHERE codfaz = $2
+2023-02-14 14:51:32.723 -03 [7508] ERROR:  syntax error at or near "WHERE" at character 31
+2023-02-14 14:51:32.723 -03 [7508] STATEMENT:  UPDATE fazenda SET nome = $1, WHERE codfaz = $2
+2023-02-14 15:10:12.677 -03 [8676] ERROR:  column "nome" of relation "fazenda" contains null values
+2023-02-14 15:10:12.677 -03 [8676] STATEMENT:  ALTER TABLE IF EXISTS public.fazenda
+	    ADD COLUMN nome character varying(20) NOT NULL;
+2023-02-14 16:00:23.918 -03 [3280] ERROR:  null value in column "descricao" of relation "area" violates not-null constraint
+2023-02-14 16:00:23.918 -03 [3280] DETAIL:  Failing row contains (1, 1, null, 8.0000).
+2023-02-14 16:00:23.918 -03 [3280] STATEMENT:  INSERT INTO area (codfaz, descricao, valor) VALUES ($1, $2, $3)
+2023-02-14 16:43:29.928 -03 [10052] ERROR:  column "codarea" does not exist at character 26
+2023-02-14 16:43:29.928 -03 [10052] HINT:  Perhaps you meant to reference the column "area.codaria".
+2023-02-14 16:43:29.928 -03 [10052] STATEMENT:  SELECT * FROM area WHERE codarea = $1
+2023-02-14 16:44:06.366 -03 [11244] ERROR:  column "codarea" does not exist at character 26
+2023-02-14 16:44:06.366 -03 [11244] HINT:  Perhaps you meant to reference the column "area.codaria".
+2023-02-14 16:44:06.366 -03 [11244] STATEMENT:  SELECT * FROM area WHERE codarea = $1
+2023-02-14 16:47:22.205 -03 [896] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-14 16:53:04.481 -03 [5016] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-14 16:53:04.482 -03 [8676] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-14 16:53:04.483 -03 [10064] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-14 16:53:04.495 -03 [3704] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-14 16:53:04.496 -03 [8800] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-14 16:53:04.496 -03 [11516] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-14 16:53:04.528 -03 [3284] LOG:  could not receive data from client: unrecognized winsock error 10054

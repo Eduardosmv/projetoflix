@@ -1,0 +1,63 @@
+2023-03-10 07:07:44.508 -03 [4588] LOG:  starting PostgreSQL 14.6, compiled by Visual C++ build 1914, 64-bit
+2023-03-10 07:07:44.517 -03 [4588] LOG:  listening on IPv6 address "::", port 5432
+2023-03-10 07:07:44.517 -03 [4588] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-03-10 07:07:45.053 -03 [4384] LOG:  database system was interrupted; last known up at 2023-03-09 09:41:32 -03
+2023-03-10 07:07:54.317 -03 [4384] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-03-10 07:07:54.329 -03 [4384] LOG:  redo starts at 0/1AF0E00
+2023-03-10 07:07:54.329 -03 [4384] LOG:  invalid record length at 0/1AF0EE8: wanted 24, got 0
+2023-03-10 07:07:54.329 -03 [4384] LOG:  redo done at 0/1AF0EB0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-03-10 07:07:54.413 -03 [4588] LOG:  database system is ready to accept connections
+2023-03-10 08:43:33.894 -03 [6576] ERROR:  insert or update on table "colheita" violates foreign key constraint "quadra_refpk"
+2023-03-10 08:43:33.894 -03 [6576] DETAIL:  Key (codquadra)=(1) is not present in table "quadra".
+2023-03-10 08:43:33.894 -03 [6576] STATEMENT:  INSERT INTO colheita (guuidcolheita, guuidcolhedor, codfaz, codaria, codquadra, data, qtd, valor, total ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+2023-03-10 08:43:33.959 -03 [11576] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 08:52:45.949 -03 [12404] ERROR:  duplicate key value violates unique constraint "colheita_pkey"
+2023-03-10 08:52:45.949 -03 [12404] DETAIL:  Key (guuidcolheita)=(03aa6cde-300e-4807-963d-3ef030de0f53) already exists.
+2023-03-10 08:52:45.949 -03 [12404] STATEMENT:  INSERT INTO colheita (guuidcolheita, guuidcolhedor, codfaz, codaria, codquadra, data, qtd, valor, total ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+2023-03-10 08:52:45.951 -03 [6356] ERROR:  duplicate key value violates unique constraint "colheita_pkey"
+2023-03-10 08:52:45.951 -03 [6356] DETAIL:  Key (guuidcolheita)=(04433eff-54ad-4b80-aad6-0c3fc58b6009) already exists.
+2023-03-10 08:52:45.951 -03 [6356] STATEMENT:  INSERT INTO colheita (guuidcolheita, guuidcolhedor, codfaz, codaria, codquadra, data, qtd, valor, total ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+2023-03-10 08:52:45.962 -03 [6356] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 11:18:18.365 -03 [13328] ERROR:  insert or update on table "colheita" violates foreign key constraint "quadra_refpk"
+2023-03-10 11:18:18.365 -03 [13328] DETAIL:  Key (codquadra)=(1) is not present in table "quadra".
+2023-03-10 11:18:18.365 -03 [13328] STATEMENT:  INSERT INTO colheita (guuidcolheita, guuidcolhedor, codfaz, codaria, codquadra, data, qtd, valor, total ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+2023-03-10 11:18:18.420 -03 [13324] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 11:18:18.420 -03 [272] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 11:18:18.422 -03 [13512] LOG:  could not send data to client: unrecognized winsock error 10054
+2023-03-10 11:18:18.422 -03 [13512] FATAL:  connection to client lost
+2023-03-10 11:20:14.211 -03 [9236] ERROR:  insert or update on table "colheita" violates foreign key constraint "quadra_refpk"
+2023-03-10 11:20:14.211 -03 [9236] DETAIL:  Key (codquadra)=(1) is not present in table "quadra".
+2023-03-10 11:20:14.211 -03 [9236] STATEMENT:  INSERT INTO colheita (guuidcolheita, guuidcolhedor, codfaz, codaria, codquadra, data, qtd, valor, total ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+2023-03-10 11:20:14.272 -03 [640] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 11:20:14.282 -03 [6880] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 11:20:14.284 -03 [3612] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 14:17:08.294 -03 [8108] ERROR:  duplicate key value violates unique constraint "colheita_pkey"
+2023-03-10 14:17:08.294 -03 [8108] DETAIL:  Key (guuidcolheita)=(de5232f0-e262-4ba7-9a0b-55814b296bb2) already exists.
+2023-03-10 14:17:08.294 -03 [8108] STATEMENT:  INSERT INTO colheita (guuidcolheita, guuidcolhedor, codfaz, codaria, codquadra, data, qtd, valor, total ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+2023-03-10 14:17:08.348 -03 [3988] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 14:17:08.353 -03 [4752] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 14:17:08.365 -03 [13164] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:27:30.929 -03 [13972] ERROR:  malformed range literal: "16:10:07"
+2023-03-10 16:27:30.929 -03 [13972] DETAIL:  Missing left parenthesis or bracket.
+2023-03-10 16:27:30.929 -03 [13972] CONTEXT:  unnamed portal parameter $8 = '...'
+2023-03-10 16:27:30.929 -03 [13972] STATEMENT:  INSERT INTO colheita (guuidcolheita, guuidcolhedor, codverificado, codfaz, codaria, codquadra, data, hora, qtd, valor, total ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
+2023-03-10 16:27:31.029 -03 [13868] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:27:31.038 -03 [12252] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:27:31.045 -03 [14204] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:27:31.046 -03 [8116] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:27:31.050 -03 [4424] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:27:31.059 -03 [1924] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:27:31.061 -03 [8252] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:27:31.064 -03 [1784] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:27:31.067 -03 [6716] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:31:05.219 -03 [12172] ERROR:  syntax error at or near "*" at character 8
+2023-03-10 16:31:05.219 -03 [12172] STATEMENT:  delete * from public.colheita
+2023-03-10 16:56:11.738 -03 [12344] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:56:11.740 -03 [9564] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:56:11.740 -03 [12172] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:56:11.740 -03 [2020] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:56:11.740 -03 [7112] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:56:11.743 -03 [4408] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:56:11.742 -03 [11012] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:56:11.753 -03 [10288] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-10 16:56:11.755 -03 [9796] LOG:  could not receive data from client: unrecognized winsock error 10054

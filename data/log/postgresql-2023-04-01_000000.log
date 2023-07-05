@@ -1,0 +1,4 @@
+2023-04-03 07:25:33.535 -03 [4472] LOG:  aborting any active transactions
+2023-04-03 07:25:33.543 -03 [4472] LOG:  background worker "logical replication launcher" (PID 6716) exited with exit code 1
+2023-04-03 07:25:33.545 -03 [6880] LOG:  shutting down
+2023-04-03 07:25:33.581 -03 [4472] LOG:  database system is shut down

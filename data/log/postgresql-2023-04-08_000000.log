@@ -1,0 +1,72 @@
+2023-04-08 07:14:09.583 -03 [6716] ERROR:  update or delete on table "colhedor" violates foreign key constraint "vale_guuidcolhedor_fkey" on table "vale"
+2023-04-08 07:14:09.583 -03 [6716] DETAIL:  Key (guuidcolhedor)=(0210fcbf-e93b-44fe-ad36-846e57dfce9c) is still referenced from table "vale".
+2023-04-08 07:14:09.583 -03 [6716] STATEMENT:  DELETE FROM public.colhedor
+	    WHERE guuidcolhedor IN
+	        ('0210fcbf-e93b-44fe-ad36-846e57dfce9c', 'fb7ffe8d-e258-4fcd-92a5-fdb5a1f5dee9');
+2023-04-08 07:14:11.691 -03 [6716] ERROR:  update or delete on table "colhedor" violates foreign key constraint "vale_guuidcolhedor_fkey" on table "vale"
+2023-04-08 07:14:11.691 -03 [6716] DETAIL:  Key (guuidcolhedor)=(0210fcbf-e93b-44fe-ad36-846e57dfce9c) is still referenced from table "vale".
+2023-04-08 07:14:11.691 -03 [6716] STATEMENT:  DELETE FROM public.colhedor
+	    WHERE guuidcolhedor IN
+	        ('0210fcbf-e93b-44fe-ad36-846e57dfce9c', 'fb7ffe8d-e258-4fcd-92a5-fdb5a1f5dee9');
+2023-04-08 07:15:42.672 -03 [5128] ERROR:  update or delete on table "area" violates foreign key constraint "quadra_codarea_fkey" on table "quadra"
+2023-04-08 07:15:42.672 -03 [5128] DETAIL:  Key (codarea)=(1) is still referenced from table "quadra".
+2023-04-08 07:15:42.672 -03 [5128] STATEMENT:  DELETE FROM public.area
+	    WHERE codarea IN
+	        (1);
+2023-04-08 07:15:49.145 -03 [5128] ERROR:  update or delete on table "area" violates foreign key constraint "quadra_codarea_fkey" on table "quadra"
+2023-04-08 07:15:49.145 -03 [5128] DETAIL:  Key (codarea)=(2) is still referenced from table "quadra".
+2023-04-08 07:15:49.145 -03 [5128] STATEMENT:  DELETE FROM public.area
+	    WHERE codarea IN
+	        (2);
+2023-04-08 07:18:01.642 -03 [708] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 07:18:01.643 -03 [2152] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 07:18:01.644 -03 [5128] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 07:18:01.644 -03 [580] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 07:18:01.645 -03 [4572] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 07:18:01.647 -03 [6716] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 07:18:01.648 -03 [5760] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 07:34:42.735 -03 [1460] ERROR:  invalid input syntax for type integer: "17.000"
+2023-04-08 07:34:42.735 -03 [1460] CONTEXT:  COPY area, line 2, column descricao: "17.000"
+2023-04-08 07:34:42.735 -03 [1460] STATEMENT:  copy public.area from 'C:\import\areas.csv'
+	delimiter ';'
+	csv header 
+2023-04-08 07:38:39.744 -03 [1460] ERROR:  insert or update on table "quadra" violates foreign key constraint "quadra_codarea_fkey"
+2023-04-08 07:38:39.744 -03 [1460] DETAIL:  Key (codarea)=(3) is not present in table "area".
+2023-04-08 07:38:39.744 -03 [1460] STATEMENT:  copy public.quadra from 'C:\import\quadras.csv'
+	delimiter ';'
+	csv header 
+2023-04-08 07:44:13.083 -03 [2668] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 07:44:13.084 -03 [4100] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 07:44:13.084 -03 [1460] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 07:44:13.086 -03 [6928] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 07:44:13.086 -03 [324] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 07:44:13.086 -03 [6668] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 08:29:02.543 -03 [6320] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 08:29:02.543 -03 [2604] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 08:29:02.543 -03 [904] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 08:43:09.323 -03 [464] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 08:43:09.325 -03 [492] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 08:43:09.325 -03 [116] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 08:43:09.325 -03 [1764] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-08 08:43:09.326 -03 [4720] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

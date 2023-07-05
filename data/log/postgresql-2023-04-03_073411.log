@@ -1,0 +1,10 @@
+2023-04-03 07:34:11.711 -03 [4432] LOG:  starting PostgreSQL 14.6, compiled by Visual C++ build 1914, 64-bit
+2023-04-03 07:34:11.712 -03 [4432] LOG:  listening on IPv6 address "::", port 5432
+2023-04-03 07:34:11.712 -03 [4432] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-04-03 07:34:12.101 -03 [4896] LOG:  database system was shut down at 2023-04-03 07:33:51 -03
+2023-04-03 07:34:12.236 -03 [4432] LOG:  database system is ready to accept connections
+2023-04-03 07:42:57.272 -03 [4432] LOG:  received fast shutdown request
+2023-04-03 07:42:57.278 -03 [4432] LOG:  aborting any active transactions
+2023-04-03 07:42:57.285 -03 [4432] LOG:  background worker "logical replication launcher" (PID 5052) exited with exit code 1
+2023-04-03 07:42:57.285 -03 [4992] LOG:  shutting down
+2023-04-03 07:42:57.320 -03 [4432] LOG:  database system is shut down

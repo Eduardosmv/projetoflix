@@ -1,0 +1,104 @@
+2023-03-07 13:52:05.907 -03 [4344] LOG:  starting PostgreSQL 14.6, compiled by Visual C++ build 1914, 64-bit
+2023-03-07 13:52:05.912 -03 [4344] LOG:  listening on IPv6 address "::", port 5432
+2023-03-07 13:52:05.912 -03 [4344] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-03-07 13:52:06.362 -03 [5024] LOG:  database system was interrupted; last known up at 2023-03-07 13:44:58 -03
+2023-03-07 13:52:11.439 -03 [5024] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-03-07 13:52:11.452 -03 [5024] LOG:  redo starts at 0/1A6ED70
+2023-03-07 13:52:11.454 -03 [5024] LOG:  invalid record length at 0/1A6FB60: wanted 24, got 0
+2023-03-07 13:52:11.454 -03 [5024] LOG:  redo done at 0/1A6FB28 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-03-07 13:52:11.595 -03 [4344] LOG:  database system is ready to accept connections
+2023-03-07 14:08:20.881 -03 [5360] ERROR:  relation "public.quadras" does not exist at character 15
+2023-03-07 14:08:20.881 -03 [5360] STATEMENT:  select * from public.quadras
+2023-03-07 14:09:50.346 -03 [5360] ERROR:  relation "public.colhedores" does not exist at character 15
+2023-03-07 14:09:50.346 -03 [5360] STATEMENT:  select * from public.colhedores
+2023-03-07 14:10:37.632 -03 [4652] ERROR:  invalid input syntax for type uuid: "NaN"
+2023-03-07 14:10:37.632 -03 [4652] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-07 14:10:37.632 -03 [4652] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-07 14:10:45.080 -03 [7116] ERROR:  invalid input syntax for type uuid: "NaN"
+2023-03-07 14:10:45.080 -03 [7116] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-07 14:10:45.080 -03 [7116] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-07 14:10:52.251 -03 [9316] ERROR:  invalid input syntax for type uuid: "806"
+2023-03-07 14:10:52.251 -03 [9316] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-07 14:10:52.251 -03 [9316] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-07 14:11:08.107 -03 [7628] ERROR:  invalid input syntax for type uuid: "806"
+2023-03-07 14:11:08.107 -03 [7628] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-07 14:11:08.107 -03 [7628] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-07 14:11:16.772 -03 [9908] ERROR:  invalid input syntax for type uuid: "806"
+2023-03-07 14:11:16.772 -03 [9908] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-07 14:11:16.772 -03 [9908] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-07 14:11:37.318 -03 [5360] ERROR:  relation "public.areas" does not exist at character 15
+2023-03-07 14:11:37.318 -03 [5360] STATEMENT:  select * from public.areas
+2023-03-07 14:12:01.907 -03 [5360] ERROR:  update or delete on table "area" violates foreign key constraint "area_refpk" on table "quadra"
+2023-03-07 14:12:01.907 -03 [5360] DETAIL:  Key (codaria)=(3) is still referenced from table "quadra".
+2023-03-07 14:12:01.907 -03 [5360] STATEMENT:  DELETE FROM public.area
+	    WHERE codaria IN
+	        (3);
+2023-03-07 14:13:10.295 -03 [5360] ERROR:  update or delete on table "area" violates foreign key constraint "area_refpk" on table "quadra"
+2023-03-07 14:13:10.295 -03 [5360] DETAIL:  Key (codaria)=(3) is still referenced from table "quadra".
+2023-03-07 14:13:10.295 -03 [5360] STATEMENT:  DELETE FROM public.area
+	    WHERE codaria IN
+	        (3);
+2023-03-07 14:13:53.211 -03 [5360] ERROR:  update or delete on table "area" violates foreign key constraint "area_refpk" on table "quadra"
+2023-03-07 14:13:53.211 -03 [5360] DETAIL:  Key (codaria)=(3) is still referenced from table "quadra".
+2023-03-07 14:13:53.211 -03 [5360] STATEMENT:  DELETE FROM public.area
+	    WHERE codaria IN
+	        (3);
+2023-03-07 14:18:19.383 -03 [3676] ERROR:  invalid input syntax for type integer: "17.000"
+2023-03-07 14:18:19.383 -03 [3676] CONTEXT:  COPY area, line 2, column Descricao: "17.000"
+2023-03-07 14:18:19.383 -03 [3676] STATEMENT:  copy public.area
+	from 'C:\import\areas.csv'
+	delimiter ';'
+	csv header
+2023-03-07 14:21:20.034 -03 [3676] ERROR:  duplicate key value violates unique constraint "area_pkey"
+2023-03-07 14:21:20.034 -03 [3676] DETAIL:  Key (codaria)=(3) already exists.
+2023-03-07 14:21:20.034 -03 [3676] CONTEXT:  COPY area, line 4
+2023-03-07 14:21:20.034 -03 [3676] STATEMENT:  copy public.area
+	from 'C:\import\areas.csv'
+	delimiter ';'
+	csv header
+2023-03-07 16:22:30.124 -03 [4792] ERROR:  value too long for type character varying(12)
+2023-03-07 16:22:30.124 -03 [4792] CONTEXT:  COPY colhedor, line 2, column cpf: "862.246.765-18"
+2023-03-07 16:22:30.124 -03 [4792] STATEMENT:  copy public.colhedor 
+	from 'C:\import\colhedor.csv'
+	delimiter ';'
+	csv header
+2023-03-07 16:23:34.521 -03 [4792] ERROR:  missing data for column "codcei"
+2023-03-07 16:23:34.521 -03 [4792] CONTEXT:  COPY colhedor, line 2: "9EA09C3A-14B9-4858-90FC-072C9D11360C;ALDEMIR ARAGAO OLIVEIRA;862.246.765-18;1"
+2023-03-07 16:23:34.521 -03 [4792] STATEMENT:  copy public.colhedor 
+	from 'C:\import\colhedor.csv'
+	delimiter ';'
+	csv header
+2023-03-07 16:27:12.304 -03 [4792] ERROR:  invalid byte sequence for encoding "UTF8": 0xc3 0x4f
+2023-03-07 16:27:12.304 -03 [4792] CONTEXT:  COPY colhedor, line 5
+2023-03-07 16:27:12.304 -03 [4792] STATEMENT:  copy public.colhedor 
+	from 'C:\import\colhedor.csv'
+	delimiter ';'
+	csv header
+2023-03-07 16:29:20.393 -03 [4792] ERROR:  invalid byte sequence for encoding "UTF8": 0xc7 0xc3
+2023-03-07 16:29:20.393 -03 [4792] CONTEXT:  COPY colhedor, line 56
+2023-03-07 16:29:20.393 -03 [4792] STATEMENT:  copy public.colhedor 
+	from 'C:\import\colhedor.csv'
+	delimiter ';'
+	csv header
+2023-03-07 16:33:30.305 -03 [4792] ERROR:  invalid byte sequence for encoding "UTF8": 0xc7 0x41
+2023-03-07 16:33:30.305 -03 [4792] CONTEXT:  COPY colhedor, line 206
+2023-03-07 16:33:30.305 -03 [4792] STATEMENT:  copy public.colhedor 
+	from 'C:\import\colhedor.csv'
+	delimiter ';'
+	csv header
+2023-03-07 16:34:11.511 -03 [4792] ERROR:  invalid byte sequence for encoding "UTF8": 0xc7 0xc3
+2023-03-07 16:34:11.511 -03 [4792] CONTEXT:  COPY colhedor, line 347
+2023-03-07 16:34:11.511 -03 [4792] STATEMENT:  copy public.colhedor 
+	from 'C:\import\colhedor.csv'
+	delimiter ';'
+	csv header
+2023-03-07 16:51:18.992 -03 [3720] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 16:51:18.996 -03 [3676] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 16:51:18.997 -03 [7832] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 16:51:18.998 -03 [256] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 16:51:19.000 -03 [5760] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 16:51:19.000 -03 [5360] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 16:51:19.001 -03 [4792] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 16:51:19.010 -03 [10408] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 16:51:19.010 -03 [1704] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 16:51:19.044 -03 [11276] LOG:  could not receive data from client: unrecognized winsock error 10054

@@ -1,0 +1,7 @@
+2023-06-02 15:28:03.920 -03 [6688] LOG:  received fast shutdown request
+2023-06-02 15:28:03.924 -03 [6688] LOG:  aborting any active transactions
+2023-06-02 15:28:03.929 -03 [7260] ERROR:  canceling statement due to user request
+2023-06-02 15:28:03.929 -03 [7236] ERROR:  canceling statement due to user request
+2023-06-02 15:28:03.948 -03 [6688] LOG:  background worker "logical replication launcher" (PID 7236) exited with exit code 1
+2023-06-02 15:28:03.949 -03 [7492] LOG:  shutting down
+2023-06-02 15:28:04.030 -03 [6688] LOG:  database system is shut down

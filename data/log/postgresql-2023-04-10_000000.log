@@ -1,0 +1,9 @@
+2023-04-10 08:48:53.053 -03 [4128] ERROR:  update or delete on table "colhedor" violates foreign key constraint "colheita_guuidcolhedor_fkey" on table "colheita"
+2023-04-10 08:48:53.053 -03 [4128] DETAIL:  Key (guuidcolhedor)=(b806b46e-ab90-46c1-ab48-0a10eef5ad56) is still referenced from table "colheita".
+2023-04-10 08:48:53.053 -03 [4128] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-04-10 08:48:56.321 -03 [3000] ERROR:  update or delete on table "colhedor" violates foreign key constraint "colheita_guuidcolhedor_fkey" on table "colheita"
+2023-04-10 08:48:56.321 -03 [3000] DETAIL:  Key (guuidcolhedor)=(b806b46e-ab90-46c1-ab48-0a10eef5ad56) is still referenced from table "colheita".
+2023-04-10 08:48:56.321 -03 [3000] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-04-10 08:48:57.248 -03 [1864] ERROR:  update or delete on table "colhedor" violates foreign key constraint "colheita_guuidcolhedor_fkey" on table "colheita"
+2023-04-10 08:48:57.248 -03 [1864] DETAIL:  Key (guuidcolhedor)=(b806b46e-ab90-46c1-ab48-0a10eef5ad56) is still referenced from table "colheita".
+2023-04-10 08:48:57.248 -03 [1864] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1

@@ -1,0 +1,52 @@
+2023-03-07 07:17:48.917 -03 [4332] LOG:  starting PostgreSQL 14.6, compiled by Visual C++ build 1914, 64-bit
+2023-03-07 07:17:48.918 -03 [4332] LOG:  listening on IPv6 address "::", port 5432
+2023-03-07 07:17:48.918 -03 [4332] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-03-07 07:17:49.420 -03 [4980] LOG:  database system was interrupted; last known up at 2023-03-06 07:13:56 -03
+2023-03-07 07:17:59.643 -03 [4980] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-03-07 07:17:59.658 -03 [4980] LOG:  redo starts at 0/1A69F78
+2023-03-07 07:17:59.658 -03 [4980] LOG:  invalid record length at 0/1A69FB0: wanted 24, got 0
+2023-03-07 07:17:59.658 -03 [4980] LOG:  redo done at 0/1A69F78 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-03-07 07:17:59.837 -03 [4332] LOG:  database system is ready to accept connections
+2023-03-07 07:56:29.592 -03 [5836] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 07:56:29.592 -03 [6300] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 08:09:26.365 -03 [5676] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 08:09:26.365 -03 [10928] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 10:40:08.352 -03 [6752] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 10:40:08.352 -03 [5348] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 10:40:08.352 -03 [10908] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 11:25:10.650 -03 [3676] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 11:25:10.650 -03 [6936] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 11:44:58.640 -03 [10484] ERROR:  schema "schemas" does not exist
+2023-03-07 11:44:58.640 -03 [10484] STATEMENT:  copy schemas.quadra 
+	from 'C:\import\quadras.csv'
+	delimiter ';'
+	csv header
+2023-03-07 11:45:19.763 -03 [10484] ERROR:  syntax error at or near "1" at character 14
+2023-03-07 11:45:19.763 -03 [10484] STATEMENT:  copy schemas(1).quadra 
+	from 'C:\import\quadras.csv'
+	delimiter ';'
+	csv header
+2023-03-07 11:46:33.794 -03 [10484] ERROR:  duplicate key value violates unique constraint "quadra_pkey"
+2023-03-07 11:46:33.794 -03 [10484] DETAIL:  Key (codquadra)=(2) already exists.
+2023-03-07 11:46:33.794 -03 [10484] CONTEXT:  COPY quadra, line 3: "2;5;1;B"
+2023-03-07 11:46:33.794 -03 [10484] STATEMENT:  copy public.quadra 
+	from 'C:\import\quadras.csv'
+	delimiter ';'
+	csv header
+2023-03-07 11:49:03.663 -03 [5752] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 11:49:03.663 -03 [5156] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 11:49:03.663 -03 [3908] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 11:49:03.663 -03 [6968] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 11:49:03.663 -03 [4224] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 13:38:41.925 -03 [6856] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 13:38:41.925 -03 [8920] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 13:38:41.925 -03 [5592] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 13:38:41.930 -03 [7004] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 13:38:41.931 -03 [7352] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 13:38:42.006 -03 [1508] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-07 13:39:12.594 -03 [4332] LOG:  received fast shutdown request
+2023-03-07 13:39:12.603 -03 [4332] LOG:  aborting any active transactions
+2023-03-07 13:39:12.605 -03 [8072] ERROR:  canceling statement due to user request
+2023-03-07 13:39:12.610 -03 [4332] LOG:  background worker "logical replication launcher" (PID 8072) exited with exit code 1
+2023-03-07 13:39:12.611 -03 [8024] LOG:  shutting down
+2023-03-07 13:39:12.646 -03 [4332] LOG:  database system is shut down

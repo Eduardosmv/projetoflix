@@ -1,0 +1,114 @@
+2023-04-03 16:00:15.018 -03 [4472] LOG:  starting PostgreSQL 14.6, compiled by Visual C++ build 1914, 64-bit
+2023-04-03 16:00:15.018 -03 [4472] LOG:  listening on IPv6 address "::", port 5432
+2023-04-03 16:00:15.019 -03 [4472] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-04-03 16:00:15.393 -03 [4900] LOG:  database system was shut down at 2023-04-03 15:59:55 -03
+2023-04-03 16:00:15.536 -03 [4472] LOG:  database system is ready to accept connections
+2023-04-03 16:22:27.508 -03 [10580] ERROR:  syntax error at or near "0007038" at character 57
+2023-04-03 16:22:27.508 -03 [10580] STATEMENT:   SELECT count(*) FROM Colheita WHERE guuidcolheita = $1 0007038c-d0c9-4f15-9317-18d10efc0053
+2023-04-03 16:22:27.508 -03 [3876] ERROR:  syntax error at or near "0007038" at character 57
+2023-04-03 16:22:27.508 -03 [3876] STATEMENT:   SELECT count(*) FROM Colheita WHERE guuidcolheita = $1 0007038c-d0c9-4f15-9317-18d10efc0052
+2023-04-03 16:22:27.521 -03 [10580] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-04-03 16:28:06.326 -03 [10500] ERROR:  syntax error at or near "0007038" at character 57
+2023-04-03 16:28:06.326 -03 [10500] STATEMENT:   SELECT count(*) FROM Colheita WHERE guuidcolheita = $1 0007038c-d0c9-4f15-9317-18d10efc0053
+2023-04-03 16:28:06.326 -03 [10652] ERROR:  syntax error at or near "0007038" at character 57
+2023-04-03 16:28:06.326 -03 [10652] STATEMENT:   SELECT count(*) FROM Colheita WHERE guuidcolheita = $1 0007038c-d0c9-4f15-9317-18d10efc0052
+2023-04-03 16:28:06.342 -03 [10652] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-04-03 16:29:49.732 -03 [10492] ERROR:  syntax error at or near "c" at character 61
+2023-04-03 16:29:49.732 -03 [10492] STATEMENT:   SELECT count(*) FROM Colheita WHERE guuidcolheita = 0007038c-d0c9-4f15-9317-18d10efc0053
+2023-04-03 16:29:49.733 -03 [6628] ERROR:  syntax error at or near "c" at character 61
+2023-04-03 16:29:49.733 -03 [6628] STATEMENT:   SELECT count(*) FROM Colheita WHERE guuidcolheita = 0007038c-d0c9-4f15-9317-18d10efc0052
+2023-04-03 16:29:49.745 -03 [6628] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-04-03 16:30:56.146 -03 [11012] ERROR:  syntax error at or near "c" at character 61
+2023-04-03 16:30:56.146 -03 [11012] STATEMENT:   SELECT count(*) FROM Colheita WHERE guuidcolheita = 0007038c-d0c9-4f15-9317-18d10efc0052
+2023-04-03 16:30:56.147 -03 [5580] ERROR:  syntax error at or near "c" at character 61
+2023-04-03 16:30:56.147 -03 [5580] STATEMENT:   SELECT count(*) FROM Colheita WHERE guuidcolheita = 0007038c-d0c9-4f15-9317-18d10efc0053
+2023-04-03 16:30:56.159 -03 [5580] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-04-03 16:32:22.184 -03 [11012] ERROR:  syntax error at or near "c" at character 61
+2023-04-03 16:32:22.184 -03 [11012] STATEMENT:   SELECT count(*) FROM Colheita WHERE guuidcolheita = 0007038c-d0c9-4f15-9317-18d10efc0053
+2023-04-03 16:32:22.195 -03 [4804] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-04-03 16:35:33.872 -03 [1732] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-04-03 16:35:33.872 -03 [4876] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-04-03 16:46:56.737 -03 [6360] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-04-03 16:46:56.740 -03 [8240] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-04-03 16:46:56.741 -03 [4672] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-04-03 16:46:56.824 -03 [5988] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-04-04 09:22:12.319 -03 [5220] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:22:12.319 -03 [5220] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:22:12.319 -03 [5220] STATEMENT:  DELETE FROM quadra WHERE codquadra = $1
+2023-04-04 09:22:13.498 -03 [5964] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:22:13.498 -03 [5964] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:22:13.498 -03 [5964] STATEMENT:  DELETE FROM quadra WHERE codquadra = $1
+2023-04-04 09:22:14.131 -03 [11988] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:22:14.131 -03 [11988] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:22:14.131 -03 [11988] STATEMENT:  DELETE FROM quadra WHERE codquadra = $1
+2023-04-04 09:22:14.418 -03 [3644] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:22:14.418 -03 [3644] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:22:14.418 -03 [3644] STATEMENT:  DELETE FROM quadra WHERE codquadra = $1
+2023-04-04 09:22:17.557 -03 [10580] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:22:17.557 -03 [10580] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:22:17.557 -03 [10580] STATEMENT:  DELETE FROM quadra WHERE codquadra = $1
+2023-04-04 09:22:17.800 -03 [2696] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:22:17.800 -03 [2696] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:22:17.800 -03 [2696] STATEMENT:  DELETE FROM quadra WHERE codquadra = $1
+2023-04-04 09:25:40.813 -03 [12280] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:25:40.813 -03 [12280] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:25:40.813 -03 [12280] STATEMENT:  DELETE FROM quadra WHERE codquadra = $1
+2023-04-04 09:25:58.580 -03 [13296] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:25:58.580 -03 [13296] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:25:58.580 -03 [13296] STATEMENT:  DELETE FROM quadra WHERE codquadra = $1
+2023-04-04 09:26:15.432 -03 [5808] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:26:15.432 -03 [5808] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:26:15.432 -03 [5808] STATEMENT:  DELETE FROM public.quadra
+	    WHERE codquadra IN
+	        (1);
+2023-04-04 09:26:17.698 -03 [5808] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:26:17.698 -03 [5808] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:26:17.698 -03 [5808] STATEMENT:  DELETE FROM public.quadra
+	    WHERE codquadra IN
+	        (1);
+2023-04-04 09:26:41.028 -03 [11396] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:26:41.028 -03 [11396] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:26:41.028 -03 [11396] STATEMENT:  DELETE FROM quadra WHERE codquadra = $1
+2023-04-04 09:26:42.808 -03 [5796] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:26:42.808 -03 [5796] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:26:42.808 -03 [5796] STATEMENT:  DELETE FROM quadra WHERE codquadra = $1
+2023-04-04 09:26:44.369 -03 [4092] ERROR:  update or delete on table "quadra" violates foreign key constraint "colheita_codquadra_fkey" on table "colheita"
+2023-04-04 09:26:44.369 -03 [4092] DETAIL:  Key (codquadra)=(1) is still referenced from table "colheita".
+2023-04-04 09:26:44.369 -03 [4092] STATEMENT:  DELETE FROM quadra WHERE codquadra = $1
+2023-04-04 09:29:21.095 -03 [3704] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codcei_fkey"
+2023-04-04 09:29:21.095 -03 [3704] DETAIL:  Key (codcei)=(70) is not present in table "cei".
+2023-04-04 09:29:21.095 -03 [3704] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-04 09:29:38.429 -03 [10056] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codcei_fkey"
+2023-04-04 09:29:38.429 -03 [10056] DETAIL:  Key (codcei)=(70) is not present in table "cei".
+2023-04-04 09:29:38.429 -03 [10056] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-04 09:38:44.734 -03 [68] ERROR:  update or delete on table "colhedor" violates foreign key constraint "vale_guuidcolhedor_fkey" on table "vale"
+2023-04-04 09:38:44.734 -03 [68] DETAIL:  Key (guuidcolhedor)=(0007038c-d0c9-4f15-9317-18d10efc0041) is still referenced from table "vale".
+2023-04-04 09:38:44.734 -03 [68] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-04-04 09:38:59.279 -03 [11836] ERROR:  update or delete on table "colhedor" violates foreign key constraint "vale_guuidcolhedor_fkey" on table "vale"
+2023-04-04 09:38:59.279 -03 [11836] DETAIL:  Key (guuidcolhedor)=(0007038c-d0c9-4f15-9317-18d10efc0041) is still referenced from table "vale".
+2023-04-04 09:38:59.279 -03 [11836] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-04-04 09:39:11.626 -03 [11008] ERROR:  update or delete on table "colhedor" violates foreign key constraint "vale_guuidcolhedor_fkey" on table "vale"
+2023-04-04 09:39:11.626 -03 [11008] DETAIL:  Key (guuidcolhedor)=(0007038c-d0c9-4f15-9317-18d10efc0041) is still referenced from table "vale".
+2023-04-04 09:39:11.626 -03 [11008] STATEMENT:  DELETE FROM public.colhedor
+	    WHERE guuidcolhedor IN
+	        ('0007038c-d0c9-4f15-9317-18d10efc0041');
+2023-04-04 09:40:11.657 -03 [12832] ERROR:  update or delete on table "colhedor" violates foreign key constraint "vale_guuidcolhedor_fkey" on table "vale"
+2023-04-04 09:40:11.657 -03 [12832] DETAIL:  Key (guuidcolhedor)=(0007038c-d0c9-4f15-9317-18d10efc0041) is still referenced from table "vale".
+2023-04-04 09:40:11.657 -03 [12832] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-04-04 09:40:30.322 -03 [5684] ERROR:  update or delete on table "colhedor" violates foreign key constraint "vale_guuidcolhedor_fkey" on table "vale"
+2023-04-04 09:40:30.322 -03 [5684] DETAIL:  Key (guuidcolhedor)=(0007038c-d0c9-4f15-9317-18d10efc0041) is still referenced from table "vale".
+2023-04-04 09:40:30.322 -03 [5684] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-04-04 09:42:22.379 -03 [11060] ERROR:  update or delete on table "colhedor" violates foreign key constraint "vale_guuidcolhedor_fkey" on table "vale"
+2023-04-04 09:42:22.379 -03 [11060] DETAIL:  Key (guuidcolhedor)=(0007038c-d0c9-4f15-9317-18d10efc0041) is still referenced from table "vale".
+2023-04-04 09:42:22.379 -03 [11060] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-04-04 09:42:51.413 -03 [4992] ERROR:  update or delete on table "colhedor" violates foreign key constraint "vale_guuidcolhedor_fkey" on table "vale"
+2023-04-04 09:42:51.413 -03 [4992] DETAIL:  Key (guuidcolhedor)=(0007038c-d0c9-4f15-9317-18d10efc0041) is still referenced from table "vale".
+2023-04-04 09:42:51.413 -03 [4992] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-04-04 09:43:29.179 -03 [4360] ERROR:  update or delete on table "colhedor" violates foreign key constraint "vale_guuidcolhedor_fkey" on table "vale"
+2023-04-04 09:43:29.179 -03 [4360] DETAIL:  Key (guuidcolhedor)=(0007038c-d0c9-4f15-9317-18d10efc0041) is still referenced from table "vale".
+2023-04-04 09:43:29.179 -03 [4360] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-04-04 09:43:41.540 -03 [10924] ERROR:  update or delete on table "colhedor" violates foreign key constraint "vale_guuidcolhedor_fkey" on table "vale"
+2023-04-04 09:43:41.540 -03 [10924] DETAIL:  Key (guuidcolhedor)=(0007038c-d0c9-4f15-9317-18d10efc0041) is still referenced from table "vale".
+2023-04-04 09:43:41.540 -03 [10924] STATEMENT:  DELETE FROM public.colhedor
+	    WHERE guuidcolhedor IN
+	        ('0007038c-d0c9-4f15-9317-18d10efc0041');

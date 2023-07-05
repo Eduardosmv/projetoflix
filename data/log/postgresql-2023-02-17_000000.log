@@ -1,0 +1,6 @@
+2023-02-17 17:01:02.759 -03 [3220] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-17 17:01:02.759 -03 [7272] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-17 17:01:02.759 -03 [7472] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-17 17:01:02.759 -03 [10360] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-17 17:01:02.772 -03 [7268] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-02-17 17:01:02.790 -03 [3432] LOG:  could not receive data from client: unrecognized winsock error 10054

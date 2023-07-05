@@ -1,0 +1,12 @@
+2023-02-28 15:14:02.031 -03 [4268] LOG:  starting PostgreSQL 14.6, compiled by Visual C++ build 1914, 64-bit
+2023-02-28 15:14:02.032 -03 [4268] LOG:  listening on IPv6 address "::", port 5432
+2023-02-28 15:14:02.032 -03 [4268] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-02-28 15:14:02.441 -03 [4736] LOG:  database system was shut down at 2023-02-28 15:13:42 -03
+2023-02-28 15:14:02.587 -03 [4268] LOG:  database system is ready to accept connections
+2023-02-28 15:29:13.393 -03 [4268] LOG:  received fast shutdown request
+2023-02-28 15:29:13.401 -03 [4268] LOG:  aborting any active transactions
+2023-02-28 15:29:13.405 -03 [4932] ERROR:  canceling statement due to user request
+2023-02-28 15:29:13.405 -03 [4900] ERROR:  canceling statement due to user request
+2023-02-28 15:29:13.411 -03 [4268] LOG:  background worker "logical replication launcher" (PID 4932) exited with exit code 1
+2023-02-28 15:29:13.411 -03 [4868] LOG:  shutting down
+2023-02-28 15:29:13.443 -03 [4268] LOG:  database system is shut down

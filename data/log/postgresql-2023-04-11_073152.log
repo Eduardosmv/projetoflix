@@ -1,0 +1,9 @@
+2023-04-11 07:31:52.670 -03 [5844] LOG:  starting PostgreSQL 14.7, compiled by Visual C++ build 1914, 64-bit
+2023-04-11 07:31:52.671 -03 [5844] LOG:  listening on IPv6 address "::", port 5432
+2023-04-11 07:31:52.671 -03 [5844] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-04-11 07:31:52.881 -03 [6400] LOG:  database system was shut down at 2023-04-11 07:31:29 -03
+2023-04-11 07:31:53.103 -03 [5844] LOG:  database system is ready to accept connections
+2023-04-11 08:36:54.101 -03 [5844] LOG:  lock file "postmaster.pid" contains wrong PID: 1812 instead of 5844
+2023-04-11 08:36:54.102 -03 [5844] LOG:  performing immediate shutdown because data directory lock file is invalid
+2023-04-11 08:36:54.102 -03 [5844] LOG:  received immediate shutdown request
+2023-04-11 08:36:54.160 -03 [5844] LOG:  database system is shut down

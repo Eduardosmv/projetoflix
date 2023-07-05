@@ -1,0 +1,60 @@
+2023-03-30 14:53:36.541 -03 [9112] ERROR:  invalid input syntax for type uuid: "NaN"
+2023-03-30 14:53:36.541 -03 [9112] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-30 14:53:36.541 -03 [9112] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-30 14:53:38.134 -03 [9488] ERROR:  invalid input syntax for type uuid: "NaN"
+2023-03-30 14:53:38.134 -03 [9488] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-30 14:53:38.134 -03 [9488] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-30 14:53:39.080 -03 [2304] ERROR:  invalid input syntax for type uuid: "NaN"
+2023-03-30 14:53:39.080 -03 [2304] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-30 14:53:39.080 -03 [2304] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-30 14:54:18.825 -03 [4880] ERROR:  invalid input syntax for type uuid: "NaN"
+2023-03-30 14:54:18.825 -03 [4880] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-30 14:54:18.825 -03 [4880] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-30 14:55:25.567 -03 [8420] ERROR:  invalid input syntax for type uuid: "NaN"
+2023-03-30 14:55:25.567 -03 [8420] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-30 14:55:25.567 -03 [8420] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-30 14:55:26.279 -03 [14488] ERROR:  invalid input syntax for type uuid: "NaN"
+2023-03-30 14:55:26.279 -03 [14488] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-30 14:55:26.279 -03 [14488] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-30 14:55:26.635 -03 [10224] ERROR:  invalid input syntax for type uuid: "NaN"
+2023-03-30 14:55:26.635 -03 [10224] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-30 14:55:26.635 -03 [10224] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-30 14:55:26.927 -03 [10572] ERROR:  invalid input syntax for type uuid: "NaN"
+2023-03-30 14:55:26.927 -03 [10572] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-30 14:55:26.927 -03 [10572] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-30 15:02:07.807 -03 [14080] ERROR:  invalid input syntax for type uuid: "NaN"
+2023-03-30 15:02:07.807 -03 [14080] CONTEXT:  unnamed portal parameter $1 = '...'
+2023-03-30 15:02:07.807 -03 [14080] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-03-30 15:11:09.312 -03 [3904] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-30 15:11:09.312 -03 [15080] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-30 15:11:09.312 -03 [13568] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 07:58:34.268 -03 [15372] ERROR:  database "colheita" is being accessed by other users
+2023-03-31 07:58:34.268 -03 [15372] DETAIL:  There is 1 other session using the database.
+2023-03-31 07:58:34.268 -03 [15372] STATEMENT:  DROP DATABASE IF EXISTS colheita;
+	
+2023-03-31 07:58:47.899 -03 [15372] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 07:58:47.899 -03 [14276] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 07:58:47.899 -03 [772] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 09:11:58.640 -03 [2104] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 09:11:58.640 -03 [13044] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 09:11:58.640 -03 [8080] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 09:11:58.640 -03 [8508] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 09:11:58.641 -03 [2604] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 09:11:58.718 -03 [10708] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 09:11:58.743 -03 [13396] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 09:22:49.664 -03 [15940] ERROR:  null value in column "datatime" of relation "atualizacoes" violates not-null constraint
+2023-03-31 09:22:49.664 -03 [15940] DETAIL:  Failing row contains (Area, null).
+2023-03-31 09:22:49.664 -03 [15940] STATEMENT:  INSERT INTO public.atualizacoes (
+	descricao) VALUES (
+	'Area'::character varying)
+	 returning descricao;
+2023-03-31 11:56:05.457 -03 [916] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 11:56:05.457 -03 [15420] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 11:56:05.457 -03 [12924] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 11:56:05.458 -03 [9536] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 11:56:05.458 -03 [15892] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 11:56:05.458 -03 [10292] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 11:56:05.458 -03 [15412] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 11:56:05.458 -03 [15652] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 11:56:05.462 -03 [2688] LOG:  could not receive data from client: unrecognized winsock error 10054
+2023-03-31 11:56:05.462 -03 [12724] LOG:  could not receive data from client: unrecognized winsock error 10054

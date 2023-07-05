@@ -1,0 +1,13 @@
+2022-12-30 07:09:38.553 -03 [4216] LOG:  starting PostgreSQL 14.6, compiled by Visual C++ build 1914, 64-bit
+2022-12-30 07:09:38.554 -03 [4216] LOG:  listening on IPv6 address "::", port 5432
+2022-12-30 07:09:38.554 -03 [4216] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-12-30 07:09:38.902 -03 [4748] LOG:  database system was interrupted; last known up at 2022-12-29 07:38:45 -03
+2022-12-30 07:09:42.130 -03 [4748] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-12-30 07:09:42.149 -03 [4748] LOG:  redo starts at 0/1725100
+2022-12-30 07:09:42.149 -03 [4748] LOG:  invalid record length at 0/17251E8: wanted 24, got 0
+2022-12-30 07:09:42.149 -03 [4748] LOG:  redo done at 0/17251B0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-12-30 07:09:42.292 -03 [4216] LOG:  database system is ready to accept connections
+2022-12-30 07:35:33.789 -03 [11140] LOG:  could not receive data from client: unrecognized winsock error 10054
+2022-12-30 07:46:56.519 -03 [7476] LOG:  could not receive data from client: unrecognized winsock error 10054
+2022-12-30 07:46:56.532 -03 [6168] LOG:  could not send data to client: unrecognized winsock error 10054
+2022-12-30 07:46:56.532 -03 [6168] FATAL:  connection to client lost

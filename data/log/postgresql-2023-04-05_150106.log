@@ -1,0 +1,143 @@
+2023-04-05 15:01:06.530 -03 [1812] LOG:  starting PostgreSQL 14.6, compiled by Visual C++ build 1914, 64-bit
+2023-04-05 15:01:06.533 -03 [1812] LOG:  listening on IPv6 address "::", port 5432
+2023-04-05 15:01:06.533 -03 [1812] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-04-05 15:01:06.732 -03 [1056] LOG:  database system was interrupted; last known up at 2023-04-05 11:30:13 -03
+2023-04-05 15:01:16.444 -03 [1056] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-04-05 15:01:16.461 -03 [1056] LOG:  redo starts at 0/21452D0
+2023-04-05 15:01:16.461 -03 [1056] LOG:  invalid record length at 0/21453B8: wanted 24, got 0
+2023-04-05 15:01:16.461 -03 [1056] LOG:  redo done at 0/2145380 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-04-05 15:01:16.530 -03 [1812] LOG:  database system is ready to accept connections
+2023-04-05 15:04:46.251 -03 [5972] LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-05 15:04:46.251 -03 [5972] FATAL:  connection to client lost
+2023-04-05 15:15:10.734 -03 [5200] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-05 15:15:10.735 -03 [1800] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-05 15:15:10.735 -03 [2176] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-05 15:15:10.744 -03 [1644] LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-05 15:15:10.744 -03 [1644] FATAL:  connection to client lost
+2023-04-05 15:47:49.424 -03 [6628] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-05 15:47:49.424 -03 [5544] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-05 15:47:49.426 -03 [8] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-05 15:51:02.956 -03 [6440] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-04-05 16:16:28.027 -03 [6684] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codcei_fkey"
+2023-04-05 16:16:28.027 -03 [6684] DETAIL:  Key (codcei)=(0) is not present in table "cei".
+2023-04-05 16:16:28.027 -03 [6684] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:16:29.977 -03 [6276] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codcei_fkey"
+2023-04-05 16:16:29.977 -03 [6276] DETAIL:  Key (codcei)=(0) is not present in table "cei".
+2023-04-05 16:16:29.977 -03 [6276] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:16:31.437 -03 [1124] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codcei_fkey"
+2023-04-05 16:16:31.437 -03 [1124] DETAIL:  Key (codcei)=(0) is not present in table "cei".
+2023-04-05 16:16:31.437 -03 [1124] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:16:35.987 -03 [7052] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codfaz_fkey"
+2023-04-05 16:16:35.987 -03 [7052] DETAIL:  Key (codfaz)=(0) is not present in table "fazenda".
+2023-04-05 16:16:35.987 -03 [7052] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:16:36.505 -03 [1824] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codfaz_fkey"
+2023-04-05 16:16:36.505 -03 [1824] DETAIL:  Key (codfaz)=(0) is not present in table "fazenda".
+2023-04-05 16:16:36.505 -03 [1824] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:16:36.799 -03 [5748] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codfaz_fkey"
+2023-04-05 16:16:36.799 -03 [5748] DETAIL:  Key (codfaz)=(0) is not present in table "fazenda".
+2023-04-05 16:16:36.799 -03 [5748] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:19:37.806 -03 [592] ERROR:  update or delete on table "colhedor" violates foreign key constraint "vale_guuidcolhedor_fkey" on table "vale"
+2023-04-05 16:19:37.806 -03 [592] DETAIL:  Key (guuidcolhedor)=(0210fcbf-e93b-44fe-ad36-846e57dfce9c) is still referenced from table "vale".
+2023-04-05 16:19:37.806 -03 [592] STATEMENT:  DELETE FROM colhedor WHERE guuidcolhedor = $1
+2023-04-05 16:29:16.006 -03 [520] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:16.006 -03 [520] DETAIL:  Failing row contains (2155a021-ed82-41a0-8f83-0cde60748318, jorge, 086.739.225-85, 0, 0, null, t).
+2023-04-05 16:29:16.006 -03 [520] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:27.501 -03 [6612] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codcei_fkey"
+2023-04-05 16:29:27.501 -03 [6612] DETAIL:  Key (codcei)=(0) is not present in table "cei".
+2023-04-05 16:29:27.501 -03 [6612] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:29.255 -03 [1020] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codcei_fkey"
+2023-04-05 16:29:29.255 -03 [1020] DETAIL:  Key (codcei)=(0) is not present in table "cei".
+2023-04-05 16:29:29.255 -03 [1020] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:29.782 -03 [5856] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codcei_fkey"
+2023-04-05 16:29:29.782 -03 [5856] DETAIL:  Key (codcei)=(0) is not present in table "cei".
+2023-04-05 16:29:29.782 -03 [5856] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:30.006 -03 [4224] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codcei_fkey"
+2023-04-05 16:29:30.006 -03 [4224] DETAIL:  Key (codcei)=(0) is not present in table "cei".
+2023-04-05 16:29:30.006 -03 [4224] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:30.197 -03 [6648] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codcei_fkey"
+2023-04-05 16:29:30.197 -03 [6648] DETAIL:  Key (codcei)=(0) is not present in table "cei".
+2023-04-05 16:29:30.197 -03 [6648] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:30.389 -03 [2624] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codcei_fkey"
+2023-04-05 16:29:30.389 -03 [2624] DETAIL:  Key (codcei)=(0) is not present in table "cei".
+2023-04-05 16:29:30.389 -03 [2624] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:35.095 -03 [3384] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:35.095 -03 [3384] DETAIL:  Failing row contains (5da43429-f63b-4262-8451-393236fa48bb, jorge, 086.739.225-85, 0, 1, null, t).
+2023-04-05 16:29:35.095 -03 [3384] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:35.685 -03 [1124] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:35.685 -03 [1124] DETAIL:  Failing row contains (a3a6170b-90ce-4a69-b4e6-3917c1ea3f82, jorge, 086.739.225-85, 0, 1, null, t).
+2023-04-05 16:29:35.685 -03 [1124] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:35.881 -03 [4500] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:35.881 -03 [4500] DETAIL:  Failing row contains (ddb7613b-f19d-498f-9ef8-3e646ce24f2f, jorge, 086.739.225-85, 0, 1, null, t).
+2023-04-05 16:29:35.881 -03 [4500] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:36.065 -03 [6896] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:36.065 -03 [6896] DETAIL:  Failing row contains (169c6b2b-f880-40b8-a67a-817acbcad967, jorge, 086.739.225-85, 0, 1, null, t).
+2023-04-05 16:29:36.065 -03 [6896] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:38.786 -03 [5200] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:38.786 -03 [5200] DETAIL:  Failing row contains (888fe089-88bd-46e5-ae6c-c0fdbf495394, jorge, 086.739.225-85, 0, 3, null, t).
+2023-04-05 16:29:38.786 -03 [5200] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:38.944 -03 [6288] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:38.944 -03 [6288] DETAIL:  Failing row contains (9fb92a0c-9eab-4d0f-976e-ca78b8e709a0, jorge, 086.739.225-85, 0, 3, null, t).
+2023-04-05 16:29:38.944 -03 [6288] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:39.145 -03 [2180] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:39.145 -03 [2180] DETAIL:  Failing row contains (b03051ec-ae1f-436a-8547-1d9760e27778, jorge, 086.739.225-85, 0, 3, null, t).
+2023-04-05 16:29:39.145 -03 [2180] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:39.271 -03 [1840] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:39.271 -03 [1840] DETAIL:  Failing row contains (2d05df5a-99a6-4d72-bbc4-089120a979e2, jorge, 086.739.225-85, 0, 3, null, t).
+2023-04-05 16:29:39.271 -03 [1840] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:44.721 -03 [3328] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:44.721 -03 [3328] DETAIL:  Failing row contains (f299885e-ab0f-431e-83fe-5821f08ba48c, jorge ccc, 086.739.225-85, 0, 3, null, t).
+2023-04-05 16:29:44.721 -03 [3328] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:44.945 -03 [4556] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:44.945 -03 [4556] DETAIL:  Failing row contains (2bdd5991-b878-4da4-ad91-61ff64f04b3b, jorge ccc, 086.739.225-85, 0, 3, null, t).
+2023-04-05 16:29:44.945 -03 [4556] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:45.119 -03 [3920] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:45.119 -03 [3920] DETAIL:  Failing row contains (4b0ee8df-7c37-409e-8ce4-d1bf0e5abd69, jorge ccc, 086.739.225-85, 0, 3, null, t).
+2023-04-05 16:29:45.119 -03 [3920] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:53.587 -03 [4952] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:53.587 -03 [4952] DETAIL:  Failing row contains (7fbb3f30-8da0-4542-acae-316bea851bf5, jorge ccc, 086.739.225-85, 1, 3, null, t).
+2023-04-05 16:29:53.587 -03 [4952] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:53.915 -03 [3360] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:53.915 -03 [3360] DETAIL:  Failing row contains (59e4fcbc-5ccb-48cb-8ac8-317735b4aae4, jorge ccc, 086.739.225-85, 1, 3, null, t).
+2023-04-05 16:29:53.915 -03 [3360] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:54.090 -03 [1868] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:54.090 -03 [1868] DETAIL:  Failing row contains (5736b253-55d7-460e-9092-30ff50754f1d, jorge ccc, 086.739.225-85, 1, 3, null, t).
+2023-04-05 16:29:54.090 -03 [1868] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:54.270 -03 [5088] ERROR:  null value in column "codfaz" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:54.270 -03 [5088] DETAIL:  Failing row contains (07cb2ca9-dec2-4df6-9b71-da168215bd4a, jorge ccc, 086.739.225-85, 1, 3, null, t).
+2023-04-05 16:29:54.270 -03 [5088] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:29:59.520 -03 [820] ERROR:  null value in column "numero" of relation "colhedor" violates not-null constraint
+2023-04-05 16:29:59.520 -03 [820] DETAIL:  Failing row contains (c91b6ac8-6e81-4ed5-b60f-c35ea369bc6a, jorge ccc, 086.739.225-85, null, 3, 1, t).
+2023-04-05 16:29:59.520 -03 [820] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:30:03.306 -03 [5524] ERROR:  null value in column "numero" of relation "colhedor" violates not-null constraint
+2023-04-05 16:30:03.306 -03 [5524] DETAIL:  Failing row contains (28b22dd2-ee91-45bb-a2aa-48a5dacc1fcf, jorge ccc, 086.739.225-85, null, 3, 1, t).
+2023-04-05 16:30:03.306 -03 [5524] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:30:03.762 -03 [4560] ERROR:  null value in column "numero" of relation "colhedor" violates not-null constraint
+2023-04-05 16:30:03.762 -03 [4560] DETAIL:  Failing row contains (22099b35-9d94-4433-900c-36866a60e982, jorge ccc, 086.739.225-85, null, 3, 1, t).
+2023-04-05 16:30:03.762 -03 [4560] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:30:03.923 -03 [5560] ERROR:  null value in column "numero" of relation "colhedor" violates not-null constraint
+2023-04-05 16:30:03.923 -03 [5560] DETAIL:  Failing row contains (ebcbeb3a-44b0-4022-852b-051ddb5ceda5, jorge ccc, 086.739.225-85, null, 3, 1, t).
+2023-04-05 16:30:03.923 -03 [5560] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:30:04.115 -03 [2616] ERROR:  null value in column "numero" of relation "colhedor" violates not-null constraint
+2023-04-05 16:30:04.115 -03 [2616] DETAIL:  Failing row contains (d4b5db0a-e7c3-4fcb-bd7d-5032df186f8c, jorge ccc, 086.739.225-85, null, 3, 1, t).
+2023-04-05 16:30:04.115 -03 [2616] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:30:04.275 -03 [5840] ERROR:  null value in column "numero" of relation "colhedor" violates not-null constraint
+2023-04-05 16:30:04.275 -03 [5840] DETAIL:  Failing row contains (0d9f2de5-f257-4483-97de-1cef54b5f40f, jorge ccc, 086.739.225-85, null, 3, 1, t).
+2023-04-05 16:30:04.275 -03 [5840] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:30:04.498 -03 [1172] ERROR:  null value in column "numero" of relation "colhedor" violates not-null constraint
+2023-04-05 16:30:04.498 -03 [1172] DETAIL:  Failing row contains (ea8d7cb5-5112-4c62-bd8c-c3d591630c79, jorge ccc, 086.739.225-85, null, 3, 1, t).
+2023-04-05 16:30:04.498 -03 [1172] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:30:04.634 -03 [5048] ERROR:  null value in column "numero" of relation "colhedor" violates not-null constraint
+2023-04-05 16:30:04.634 -03 [5048] DETAIL:  Failing row contains (7dc226b7-6ab1-4155-88cb-ce10c528b095, jorge ccc, 086.739.225-85, null, 3, 1, t).
+2023-04-05 16:30:04.634 -03 [5048] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)
+2023-04-05 16:30:40.013 -03 [5764] ERROR:  insert or update on table "colhedor" violates foreign key constraint "colhedor_codcei_fkey"
+2023-04-05 16:30:40.013 -03 [5764] DETAIL:  Key (codcei)=(0) is not present in table "cei".
+2023-04-05 16:30:40.013 -03 [5764] STATEMENT:  INSERT INTO colhedor ( guuidcolhedor, nome, cpf, numero, codfaz, codcei) VALUES ($1, $2, $3, $4, $5, $6)

@@ -1,0 +1,6 @@
+2023-05-24 11:33:54.456 -03 [6836] LOG:  aborting any active transactions
+2023-05-24 11:33:54.458 -03 [6656] ERROR:  canceling statement due to user request
+2023-05-24 11:33:54.458 -03 [1996] ERROR:  canceling statement due to user request
+2023-05-24 11:33:54.479 -03 [6836] LOG:  background worker "logical replication launcher" (PID 6656) exited with exit code 1
+2023-05-24 11:33:54.480 -03 [5312] LOG:  shutting down
+2023-05-24 11:33:54.558 -03 [6836] LOG:  database system is shut down
