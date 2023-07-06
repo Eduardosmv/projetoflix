@@ -1,5 +1,0 @@
-2023-05-11 14:43:20.126 -03 [6188] LOG:  starting PostgreSQL 14.7, compiled by Visual C++ build 1914, 64-bit
-2023-05-11 14:43:20.133 -03 [6188] LOG:  listening on IPv6 address "::", port 5432
-2023-05-11 14:43:20.133 -03 [6188] LOG:  listening on IPv4 address "0.0.0.0", port 5432
-2023-05-11 14:43:20.423 -03 [5312] LOG:  database system was shut down at 2023-05-11 14:40:15 -03
-2023-05-11 14:43:20.520 -03 [6188] LOG:  database system is ready to accept connections

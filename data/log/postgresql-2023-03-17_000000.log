@@ -1,9 +1,0 @@
-2023-03-17 16:42:43.192 -03 [8656] ERROR:  value too long for type character varying(20)
-2023-03-17 16:42:43.192 -03 [8656] STATEMENT:  INSERT INTO fazenda (nome) VALUES ($1)
-2023-03-17 16:43:01.234 -03 [8288] ERROR:  value too long for type character varying(20)
-2023-03-17 16:43:01.234 -03 [8288] STATEMENT:  INSERT INTO fazenda (nome) VALUES ($1)
-2023-03-17 16:43:06.066 -03 [8560] LOG:  could not receive data from client: unrecognized winsock error 10054
-2023-03-17 16:51:44.642 -03 [14248] LOG:  could not receive data from client: unrecognized winsock error 10054
-2023-03-17 16:51:44.642 -03 [8400] LOG:  could not receive data from client: unrecognized winsock error 10054
-2023-03-17 16:51:44.643 -03 [3532] LOG:  could not receive data from client: unrecognized winsock error 10054
-2023-03-17 16:51:44.644 -03 [12192] LOG:  could not receive data from client: unrecognized winsock error 10054

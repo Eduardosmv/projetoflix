@@ -1,6 +1,0 @@
-2023-02-28 15:33:55.826 -03 [4244] LOG:  starting PostgreSQL 14.6, compiled by Visual C++ build 1914, 64-bit
-2023-02-28 15:33:55.827 -03 [4244] LOG:  listening on IPv6 address "::", port 5432
-2023-02-28 15:33:55.827 -03 [4244] LOG:  listening on IPv4 address "0.0.0.0", port 5432
-2023-02-28 15:33:56.240 -03 [4684] LOG:  database system was shut down at 2023-02-28 15:33:35 -03
-2023-02-28 15:33:56.386 -03 [4244] LOG:  database system is ready to accept connections
-2023-03-01 08:40:28.979 -03 [4244] LOG:  received fast shutdown request
